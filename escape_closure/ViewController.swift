@@ -20,6 +20,7 @@ class ViewController: UIViewController {
             print(color)
         }
         
+        
         // Implement case 2
         
         getFruitColorwithClosure("melon",completion: getColorClosure)
