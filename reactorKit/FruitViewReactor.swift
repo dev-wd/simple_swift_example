@@ -42,14 +42,14 @@ final class FruitViewReactor: Reactor {
         case .orange:
             return Observable.concat([
                 Observable.just(Mutation.setLoading(true)),
-            Observable.just(Mutation.orangeImage).delay(.milliseconds(500), scheduler: MainScheduler.instance),
+                Observable.just(Mutation.orangeImage).delay(.milliseconds(500), scheduler: MainScheduler.instance),
                 Observable.just(Mutation.setLoading(false)),
                 
             ])
         case .apple:
             return Observable.concat([
                 Observable.just(Mutation.setLoading(true)),
-            Observable.just(Mutation.appleImage).delay(.milliseconds(500), scheduler: MainScheduler.instance),
+                Observable.just(Mutation.appleImage).delay(.milliseconds(500), scheduler: MainScheduler.instance),
                 Observable.just(Mutation.setLoading(false)),
             ])
         case .cherries:
@@ -61,13 +61,13 @@ final class FruitViewReactor: Reactor {
         case .banana:
             return Observable.concat([
                 Observable.just(Mutation.setLoading(true)),
-            Observable.just(Mutation.bananaImage).delay(.milliseconds(500), scheduler: MainScheduler.instance),
+                Observable.just(Mutation.bananaImage).delay(.milliseconds(500), scheduler: MainScheduler.instance),
                 Observable.just(Mutation.setLoading(false)),
             ])
         case .grapes:
             return Observable.concat([
                 Observable.just(Mutation.setLoading(true)),
-            Observable.just(Mutation.grapesImage).delay(.milliseconds(500), scheduler: MainScheduler.instance),
+                Observable.just(Mutation.grapesImage).delay(.milliseconds(500), scheduler: MainScheduler.instance),
                 Observable.just(Mutation.setLoading(false)),
             ])
         }
