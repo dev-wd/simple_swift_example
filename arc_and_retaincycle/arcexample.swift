@@ -1,5 +1,3 @@
-import Foundation
-
 class FruitClass {
     init() {
         print("init")
