@@ -13,3 +13,6 @@ var fruitRetainClass2: FruitRetainClass? = FruitRetainClass()
 
 fruitRetainClass1?.fruitRetainClass = fruitRetainClass2
 fruitRetainClass2?.fruitRetainClass = fruitRetainClass1
+
+fruitRetainClass1 = nil
+fruitRetainClass2 = nil
