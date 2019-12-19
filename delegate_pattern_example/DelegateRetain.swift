@@ -9,20 +9,24 @@ class ViewController: UIViewController {
     }
 }
 
-class AnimalNameShowClass: AnimalAgeDelegate {
+protocol AnimalNameShowDelegate: class {
+    func resultOfAnimalName(value : String)
+}
+
+class AnimalNameShowClass: AnimalNameShowDelegate {
     let animal = Animal()
     
     init() {
         animal.delegate = self
-        animal.animalName = "lian"
+        animal.animalName = "lion"
         print("init")
     }
     deinit{
         print("deinit")
     }
     
-    func setAnimalAge(value : String) {
-        print("print \(value)")
+    func resultOfAnimalName(value : String) {
+        print("Animal name : \(value)")
     }
 }
 
@@ -34,10 +38,10 @@ class Animal {
         print("deinit")
     }
     // weak var delegate: AnimalAgeDelegate?
-    var delegate: AnimalAgeDelegate?
+    var delegate: AnimalNameShowDelegate?
     var animalName : String {
         set {
-            self.delegate?.setAnimalAge(value: newValue)
+            self.delegate?.resultOfAnimalName(value: newValue)
         }
         get {
             return "No Animal"
