@@ -27,4 +27,3 @@ fruitRetainClass2?.fruitRetainClass = fruitRetainClass1
 
 fruitRetainClass1 = nil
 fruitRetainClass2 = nil
-
