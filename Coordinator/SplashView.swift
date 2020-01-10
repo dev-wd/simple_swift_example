@@ -4,7 +4,6 @@ class SplashView: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func goToSignin(_ sender: Any) {
